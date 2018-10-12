@@ -51,4 +51,12 @@ public class GameDriver {
 		return answer;
 		
 	}
+	
+	public Integer getPoints(){
+		return 0;
+	}
+
+	public void displayScore(){
+
+	}
 }
