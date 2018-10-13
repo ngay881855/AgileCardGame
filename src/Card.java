@@ -5,9 +5,19 @@ public class Card {
 	// Answer for the card
 	private String sAnswer;
 	
+	public Card() {
+		this.sQuestion = "";
+		this.sAnswer = "";
+	}
+	public Card(String sQuestion, String sAnswer) {
+		this.sQuestion = sQuestion;
+		this.sAnswer = sAnswer;
+	}
+	
 	public String getsQuestion() {
 		return sQuestion;
 	}
+		
 	public void setsQuestion(String sQuestion) {
 		this.sQuestion = sQuestion;
 	}

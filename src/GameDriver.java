@@ -1,13 +1,18 @@
 import java.util.*;
 public class GameDriver {
 
+	// List of 50 cards with Questions and Answers
+	static Card[] CardDeck;
 	
 	public static void main(String args[]) {
+		// Initialize game
+		CardDeck = new Card[50];
+		loadCardDeck(CardDeck);
 		
-		
-		String selection;
 		displayOptions();
-		selection = userInput();
+		
+		
+		String selection = userInput();
 		
 		
 		
@@ -58,5 +63,24 @@ public class GameDriver {
 
 	public void displayScore(){
 
+	}
+	
+	// Get question and answer from file for hard code?
+	public static void loadCardDeck(Card[] cardDeck) {
+		
+		for (int i = 0; i < 50; i++)
+		{
+			cardDeck[i] = new Card();
+			
+			//cardDeck[i].setsQuestion( read a line then add to this card);
+			//cardDeck[i].setsAnswer( read the next line then add to this card);
+		}
+		
+		// Or just hard code?
+		cardDeck[0].setsQuestion("What is Net Present Value?");
+		cardDeck[0].setsQuestion("The present value of an investment’s earning less the investment itself.");
+		
+		cardDeck[1].setsQuestion("What is a product backlog?");
+		cardDeck[1].setsQuestion("A prioritized list of “requirements” for a  project.");
 	}
 }
