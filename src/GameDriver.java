@@ -6,48 +6,46 @@ public class GameDriver {
 		
 		
 		String selection;
-		displayOptions();
+		Game game = new Game();
+		game.displayGreetings();
 		selection = userInput();
+
 		
-		
-		
-		if(selection.equals("rules")) 
-		{
-			displayRules();
-		}
-		else if(selection.equals("start")) 
-		{
-			System.out.println("HERE WE GOOOOOO!");
-			Team teamOne = new Team(1);
-			Team teamTwo = new Team(2);
+		while(!selection.equals("quit")) {
+			if(selection.equals("rules")) {
+				game.displayRules();
+				System.out.println();
+			}
+			else if(selection.equals("")) {
+				System.out.println("Invalid entry........");
+				System.out.println();
+			}
+			else if(selection.equals("start")) {
+				System.out.println();
+				game.setupTeams();
+				System.out.println();
+				game.gameStart();
+			}
+			else 
+			{
+				System.out.println("AHHHHH none of those words were right bleh");	
+				System.out.println();
+			}	
+			//System.out.println();
+			selection = userInput();
 			
-			teamOne.setTeamName();
-			System.out.println("I like your name team " + teamOne.getTeamName());	
-			teamTwo.setTeamName();
-			System.out.println("oof team" + teamTwo.getTeamName() + " team one had the better name");
 		}
-		else 
-		{
-			System.out.println("AHHHHH none of those words were right bleh");	
-		}	
+		System.out.print("Game quitted........");
 		
 	}
 	
-	
-	public static void displayOptions() {
-		System.out.println("Hello and welcome to the agile card game");
-		System.out.println("__________________________________________");
-		System.out.println("If you would like to hear the rules of the game please type in rules below");
-		System.out.println("If you would like to start the game please type in start below!!");
-	}
-	
-	public static void displayRules() {
-		System.out.println("rules rules rules....");
-	}
 	public static String userInput(){
 		Scanner scanner = new Scanner(System.in);
-		String answer = scanner.next();
-		answer = answer.trim();	
+		System.out.print("User Input: ");
+		System.out.print("");
+		String answer = scanner.nextLine();
+		answer = answer.trim();
+		answer = answer.toLowerCase();	//to change it to lowercase
 		return answer;
 		
 	}
