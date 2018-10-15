@@ -24,11 +24,12 @@ public class GameDriver {
 			teamOne.setTeamName();
 			System.out.println("I like your name team " + teamOne.getTeamName());	
 			teamTwo.setTeamName();
-			System.out.println("oof team" + teamTwo.getTeamName() + " team one had the better name");
+			System.out.println("oof team " + teamTwo.getTeamName() + " team " +  teamOne.getTeamName() +" has the better name");
 		}
 		else 
 		{
-			System.out.println("AHHHHH none of those words were right bleh");	
+			System.out.println("AHHHHH none of those words were right bleh try again remember try start or rules");
+			userInput();
 		}	
 		
 	}
