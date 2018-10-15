@@ -34,21 +34,8 @@ public class GameDriver {
 			//System.out.println();
 			selection = userInput();
 			
-<<<<<<< HEAD
-			teamOne.setTeamName();
-			System.out.println("I like your name team " + teamOne.getTeamName());	
-			teamTwo.setTeamName();
-			System.out.println("oof team " + teamTwo.getTeamName() + " team " +  teamOne.getTeamName() +" has the better name");
-		}
-		else 
-		{
-			System.out.println("AHHHHH none of those words were right bleh try again remember try start or rules");
-			userInput();
-		}	
-=======
 		}
 		System.out.print("Game quitted........");
->>>>>>> d020872140c228aea256b94bbcef3e9c2b232466
 		
 	}
 	
@@ -62,12 +49,12 @@ public class GameDriver {
 		return answer;
 		
 	}
+    public Integer getPoints(){
+        return 0;
+    }
 
-	public Integer getPoints(){
-		return 0;
-	}
+    public void displayScore(){
+        //write score to the console
+    }
 
-	public void displayScore(){
-
-	}
 }

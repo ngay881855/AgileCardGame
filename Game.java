@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 //import java.util.Random;
@@ -8,6 +9,7 @@ public class Game {
 	private Team teamOneScore;
 	private Team teamTwoScore;
 	private Scanner input;
+	private ArrayList<Card> cardDeck;
 
 	public void setupTeams() {
 		// set up team names
@@ -114,6 +116,74 @@ public class Game {
 		
 	}
 
+	public void createCards(){
+        Card one  = new Card("What is Net Present Value?", "The present value of an investment’s earning less the investment itself. ");
+        Card two = new Card("What is a product backlog", "A prioritized list of “requirements” for a  project.");
+
+        Card three = new Card("Responsibility of a Product Owner?", "The business value of the project");
+
+        Card four = new Card("Responsibility of a ScrumMaster?", "Ensures that the team is functional and productive");
+
+        Card five = new Card("Responsibility of a Project Team?", "Self-organizes to complete the work.");
+
+        Card six = new Card("What is the goal of a Spike?", "Narrow the cone of uncertainty so that estimates of the implementation are feasible");
+
+        Card seven = new Card("What is needed for a Definition of Done", "A prepared list of all activities (concrete) that must be completed");
+
+        Card eight = new Card("What development model is described as “incremental and iterative”?", "Spiral Model");
+
+        Card nine = new Card("What does Boehm’s Curve show?", "The cost of a change rises exponentially the later in the development lifecycle that the change is implemented. ");
+
+        Card ten = new Card("Stories are often decomposed into what?", "Tasks");
+
+        Card eleven = new Card("Each _____ should result in a potentially shippable product.", "Sprint  ");
+
+        Card twelve = new Card("Which of the following are Scrum artifacts?", "Product backlog & Sprint backlog");
+
+        Card thirteen = new Card("A _____________ can be used to show team progress for a sprint, for a release, and for the product delivery as a whole.", "burndown chart");
+
+        Card fourteen = new Card("Who owns story point estimates and can change them if they discover new information?", "Scrum Master");
+
+        Card fifteen = new Card(" What is Persona?", "A fictitious character who is a typical example of someone who plays one or more roles");
+
+        Card sixteen = new Card("Which of the following represents the relative size of epics, stories, and tasks from biggest to smallest", "Epic > Story > Task");
+
+        Card seventeen = new Card(" A process where research and development happen concurrently; the two feed off of one another", "Coevolution");
+
+        Card eighteen = new Card("What is the relationship between epics, stories, tasks, and iterations?", "Epics require more than one iterations; stories require at most one iteration; tasks are completed in less than one iteration.");
+
+        Card nineteen = new Card("Which of the following IS NOT an agile principle?", "The most efficient and effective method of conveying information to and within a development team is through electronic means such as email and shared wiki pages");
+
+        Card twenty = new Card("Which of the following are examples of Agile frameworks.", "eXtreme Programming, Spiral, Scrum, Kanban");
+
+        Card twentyone = new Card("A software development model characterized by gates where work in the next phase does not typically begin until prior phase is complete", "Waterfall Model");
+
+        //populate card deck
+
+        cardDeck.add(one);
+        cardDeck.add(two);
+        cardDeck.add(three);
+        cardDeck.add(four);
+        cardDeck.add(five);
+        cardDeck.add(six);
+        cardDeck.add(seven);
+        cardDeck.add(eight);
+        cardDeck.add(nine);
+        cardDeck.add(ten);
+        cardDeck.add(eleven);
+        cardDeck.add(twelve);
+        cardDeck.add(thirteen);
+        cardDeck.add(fourteen);
+        cardDeck.add(fifteen);
+        cardDeck.add(sixteen);
+        cardDeck.add(seventeen);
+        cardDeck.add(eighteen);
+        cardDeck.add(nineteen);
+        cardDeck.add(twenty);
+        cardDeck.add(twentyone);
+
+
+    }
 	
 	
 	
