@@ -33,16 +33,9 @@ public class GameDriver {
 			}	
 			//System.out.println();
 			selection = userInput();
-			Team teamOne= new Team(1);
-			Team teamTwo= new Team(2);
-
-			teamOne.setTeamName();
-			System.out.println("I like your name team " + teamOne.getTeamName());	
-			teamTwo.setTeamName();
-			System.out.println("oof team " + teamTwo.getTeamName() + " team " +  teamOne.getTeamName() +" has the better name");
+			
 		}
-	
-
+		System.out.print("Game quitted........");
 		
 	}
 	
@@ -56,12 +49,12 @@ public class GameDriver {
 		return answer;
 		
 	}
+    public Integer getPoints(){
+        return 0;
+    }
 
-	public Integer getPoints(){
-		return 0;
-	}
+    public void displayScore(){
+        //write score to the console
+    }
 
-	public void displayScore(){
-
-	}
 }
