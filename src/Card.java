@@ -5,15 +5,22 @@ public class Card {
 	// Answer for the card
 	private String sAnswer;
 	//Add Number attribute
-	private String num;
-	
+	private int num;
+
+
 	public Card() {
 		this.sQuestion = "";
 		this.sAnswer = "";
 	}
-	public Card(String sQuestion, String sAnswer) {
+
+	public Card(String sQuestion, String sAnswer, int num ) {
 		this.sQuestion = sQuestion;
 		this.sAnswer = sAnswer;
+		this.num = num;
+	}
+
+	public int getNumber(){
+		return num;
 	}
 	
 	public String getsQuestion() {
