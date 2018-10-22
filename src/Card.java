@@ -4,6 +4,8 @@ public class Card {
 	private String sQuestion;
 	// Answer for the card
 	private String sAnswer;
+	//Add Number attribute
+	private String num;
 	
 	public Card() {
 		this.sQuestion = "";
