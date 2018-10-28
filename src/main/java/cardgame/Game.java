@@ -1,3 +1,4 @@
+package main.java.cardgame;
 import java.util.Scanner;
 
 //import java.util.Random;

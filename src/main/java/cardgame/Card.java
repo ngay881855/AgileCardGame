@@ -1,3 +1,4 @@
+package main.java.cardgame;
 
 public class Card {
 	// Question for the card

@@ -1,3 +1,4 @@
+package main.java.cardgame;
 import java.util.Random;
 
 public class CoinToss {
