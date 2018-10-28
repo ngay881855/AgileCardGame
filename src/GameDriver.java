@@ -9,6 +9,7 @@ public class GameDriver {
 		Game game = new Game();
 		game.displayGreetings();
 		selection = userInput();
+		String tName;
 
 		
 		while(!selection.equals("quit")) {
@@ -23,8 +24,13 @@ public class GameDriver {
 			else if(selection.equals("start")) {
 				System.out.println();
 				game.setupTeams();
-				System.out.println();
-				game.gameStart();
+				game.createQACards();
+				//System.out.println();
+				tName = game.init();
+				game.playGame(tName);
+				game.findoutWinner();
+				System.out.println("Game is over now!!!!!!!!!!!!!!!!!");
+				break;
 			}
 			else 
 			{
@@ -33,13 +39,6 @@ public class GameDriver {
 			}	
 			//System.out.println();
 			selection = userInput();
-			Team teamOne= new Team(1);
-			Team teamTwo= new Team(2);
-
-			teamOne.setTeamName();
-			System.out.println("I like your name team " + teamOne.getTeamName());	
-			teamTwo.setTeamName();
-			System.out.println("oof team " + teamTwo.getTeamName() + " team " +  teamOne.getTeamName() +" has the better name");
 		}
 	
 
